@@ -2,8 +2,6 @@ package router
 
 import (
 	"net/http"
-
-	"github.com/golang_tutorial/internal/private_pkg/http/server"
 	"github.com/gorilla/mux"
 )
 
@@ -17,7 +15,7 @@ type (
 	}
 )
 
-func CreateRouter(routes []Route) {
+func CreateRouter(routes []Route) http.Handler {
 	// create mux method router
 	r := mux.NewRouter()
 	for _, route := range routes {
@@ -27,5 +25,6 @@ func CreateRouter(routes []Route) {
 		}
 		r.HandleFunc(route.Path, route.Handler).Methods(route.Method)
 	}
-	server.ListenAndServe(r)
+
+	return r
 }

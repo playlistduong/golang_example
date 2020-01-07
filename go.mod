@@ -7,6 +7,7 @@ require (
 	github.com/codegangsta/envy v0.0.0-20141216192214-4b78388c8ce4 // indirect
 	github.com/codegangsta/gin v0.0.0-20171026143024-cafe2ce98974 // indirect
 	github.com/cortesi/modd v0.0.0-20191202231957-98a770274f90 // indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gorilla/mux v1.7.3
 	github.com/kelseyhightower/envconfig v1.4.0

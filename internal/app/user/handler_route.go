@@ -3,7 +3,7 @@ package user
 import (
 	"net/http"
 
-	"github.com/golang_tutorial/internal/private_pkg/http/router"
+	"github.com/golang_tutorial/internal/pkg/http/router"
 )
 
 func (h *Handler) Routes() []router.Route {

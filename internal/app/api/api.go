@@ -2,7 +2,8 @@ package api
 
 import (
 	"github.com/golang_tutorial/internal/app/user"
-	"github.com/golang_tutorial/internal/private_pkg/http/router"
+	"github.com/golang_tutorial/internal/pkg/http/router"
+	"github.com/golang_tutorial/internal/pkg/http/server"
 )
 
 func CreateRouter() {
@@ -11,5 +12,8 @@ func CreateRouter() {
 	var routes []router.Route
 	routes = append(routes, usersRoutes...)
 
-	router.CreateRouter(routes)
+	httpHandler := router.CreateRouter(routes)
+
+	server.ListenAndServe(httpHandler)
+
 }
