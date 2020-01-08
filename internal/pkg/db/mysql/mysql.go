@@ -5,7 +5,7 @@ import (
 	"log"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/golang_tutorial/internal/pkg/config/envconfig"
+	"github.com/golang_example/internal/pkg/config/envconfig"
 )
 
 type (

@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/golang_tutorial/internal/pkg/log"
+	"github.com/golang_example/internal/pkg/log"
 )
 
 /**

@@ -2,7 +2,7 @@ package file
 
 import "io/ioutil"
 
-import "github.com/golang_tutorial/internal/pkg/log"
+import "github.com/golang_example/internal/pkg/log"
 
 type (
 	File interface {

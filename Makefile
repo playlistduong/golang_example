@@ -1,4 +1,4 @@
-PROJECT_NAME=golang_tutorial
+PROJECT_NAME=golang_example
 VERSION=1.0.0
 ENVIRONMENT_PREFIX=MYAPP
 

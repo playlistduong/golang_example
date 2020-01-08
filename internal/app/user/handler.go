@@ -3,7 +3,7 @@ package user
 import (
 	"net/http"
 
-	"github.com/golang_tutorial/internal/pkg/http/respond"
+	"github.com/golang_example/internal/pkg/http/respond"
 )
 
 type (

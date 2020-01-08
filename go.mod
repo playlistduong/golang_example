@@ -1,4 +1,4 @@
-module github.com/golang_tutorial
+module github.com/golang_example
 
 go 1.13
 
